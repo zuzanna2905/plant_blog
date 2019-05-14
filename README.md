@@ -1,3 +1,5 @@
+This is the repository for the first alpha-blog app of the Compelete RoR Developer Course
+
 # README
 
 This README would normally document whatever steps are necessary to get the
