@@ -1,2 +1,43 @@
+$navbar-default-bg: green;
+$navbar-default-brand-color: white;
+$navbar-default-link-color: white;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+.center {
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: asset-url('buenos.JPG');
+    background-size: cover;
+    background-blend-mode: luminosity;
+    height: 550px;
+}
+
+.jumbotron h1 {
+    color: green;
+    margin-top: 0px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 5px;
+    border-top: 1px solid green;
+    text-align: center;
+    color: green;
+    padding-bottom: 5px;
+}
+
+footer a {
+    color: black;
+}
+
+.jumbotron p {
+    color: black;
+    font-weight: bold;
+}
