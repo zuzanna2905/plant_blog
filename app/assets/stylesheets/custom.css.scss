@@ -39,3 +39,12 @@ footer {
 footer a {
     color: black;
 }
+
+#title{
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.tags ul li{
+    display: inline;
+}
