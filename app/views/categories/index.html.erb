@@ -1,0 +1,8 @@
+<h1 class='center'>Categories</h1>
+<% @categories.each { |category| %>
+    <div class='row'>
+        <ul class='well user col-md-4 col-md-offset-4 center'>
+            <li><h4><%= link_to "#{category.name}", category_path(category) %></h4></li>
+        </ul>
+    </div>
+<%}%>
