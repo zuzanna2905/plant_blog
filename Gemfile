@@ -7,6 +7,8 @@ ruby '2.6.3'
 gem 'rails', '~> 5.2.3'
 # bcrypt
 gem 'bcrypt', '~> 3.1.12'
+gem 'bootstrap-will_paginate', '1.0.0'
+gem 'will_paginate', '3.1.7'
 # Use sqlite3 as the database for Active Record
 gem 'jquery-rails'
 # bootstarp for stylesheets
