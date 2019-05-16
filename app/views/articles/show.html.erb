@@ -1,14 +1,17 @@
 <div class='container'>
-    <h2 id='title' class='well col-xs-10 col-xs-offset-1'><%= @article.title %></h2>
+    <h3 id='title' class='well col-xs-10 col-xs-offset-1'><%= @article.title %></h3>
     <div class='well col-xs-10 col-xs-offset-1 center'>
         <div>
             <p><%= simple_format(@article.description)%></p>
             <hr>
-            <%= link_to "Edit this article", edit_article_path(@article), class: 'btn btn-success' %>  
+            <% if @article.user %>
+            <p>Created by: <%= link_to @article.user.username, user_path(@article.user)%></p>
+            <% end %>
+            <%= link_to "Edit this article", edit_article_path(@article), class: 'btn btn-success btn-sm' %>  
             <%= link_to "Delete this article", article_path(@article), 
                 method: :delete, 
-                data: {confirm: 'Are you sure?'}, class: 'btn btn-danger'  %> 
-            <%= link_to "Back to articles listing", articles_path, class: 'btn btn-info' %>
+                data: {confirm: 'Are you sure?'}, class: 'btn btn-danger btn-sm'  %> 
+            <%= link_to "Back to articles listing", articles_path, class: 'btn btn-info btn-sm' %>
         </div>
     </div>
     <div class='tags col-xs-10 col-xs-offset-1'>

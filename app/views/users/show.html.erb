@@ -1,0 +1,12 @@
+<div class='col-md-12'>
+    <div class='col-xs-12 center'>
+        <h2><%= @user.username %>'s page</h2>
+    </div>
+    <div class='col-xs-12 center'>
+        <%= gravatar_for @user, size: 100 %>
+    </div>
+    <div class='col-xs-12 center'>
+        <h4>My articles</h4>
+        <%= render 'articles/article', obj: @user.articles %>
+    </div>
+</div>
